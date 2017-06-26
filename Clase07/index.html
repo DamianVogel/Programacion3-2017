@@ -1,0 +1,22 @@
+
+<html>
+    <body>
+        <script>
+            function changecolor(id,color)
+            {
+                document.body.style.backgroundColor = color;
+                
+            }
+        </script>
+        <!--SELECTOR DE COLOR DE FONDO -->
+        <div>
+                <p> Seleccione color para cambiar el fondo:</p>
+                <select id=container onchange="changecolor(container,value)">
+                    <option value="white">BLANCO </option>
+                    <option value="red">ROJO</option>
+                    <option value="blue">AZUL</option>
+                    <option value="green">VERDE</option>
+                </select>
+        </div>
+    </body>
+</html>

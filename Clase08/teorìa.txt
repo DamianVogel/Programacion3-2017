@@ -1,0 +1,25 @@
+Como obtener llamados desde fuera del servidor a los objetos de mi programa
+Interactuar (API PHP)
+    Pagina entera
+    Parte Pagina
+    Javascript
+    (Todo texto de un lado para el otro)
+La idea es que solo la API se comunique con PHP
+Utilizar lo mismo que està escrito, en vez de hacerlo con un nexo (dentro del mismo server), tiene una capa mas (API) para llamarlo
+desde una interacciòn web.
+Se crea una API para cada entidad (empleado, persona, auto, etc.)
+
+//Ver BOWER para tomar codigo github de otra persona por ejemplo. (css, html)
+
+//COMPOSER
+//SLIM FRAMEWORK
+
+Instalar el composer 
+Crear carpeta en htdocs
+ejecutar comandos desde ahi 
+https://www.slimframework.com/docs/start/installation.html
+
+Configurar en el servidor web el .htacces 
+
+//VER PARA GUARDAR EN LA BD, QUE LLEGUE TODO POR POST, CREAR UN OBJETO JSON Y PASARLE ESO A LA BD.
+//UNA VEZ HECHO ESO, EL GUARDARENDB QUEDARÌA IGUAL Y EN VEZ DE ARMAR EL OBJETO CON UN POST, LO ARMO CON EL REQUEST

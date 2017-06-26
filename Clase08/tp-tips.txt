@@ -1,0 +1,7 @@
+Grabar informacion  de inicio de sesion
+    Quien se conecta
+    Desde donde
+    Error que dio 
+    Explorador 
+Grabar los password que erraron
+No borrar, sino mover los datos a una tabla de eliminados

@@ -15,9 +15,6 @@
 	<a class="btn btn-info" href="index.html">Menu principal</a>
 
 	<div class="container">
-		<div class="page-header">
-			<h1>Ejemplos de Grilla</h1>      
-		</div>
 		<div class="CajaInicio animated bounceInRight">
 			<h1>Listado de PRODUCTOS</h1>
 
@@ -31,6 +28,7 @@ echo "<table class='table'>
 				<th>  COD. BARRA </th>
 				<th>  NOMBRE     </th>
 				<th>  FOTO       </th>
+				<th>  ACCION     </th>
 			</tr> 
 		</thead>";   	
 
@@ -40,6 +38,16 @@ echo "<table class='table'>
 					<td>".$prod->GetCodBarra()."</td>
 					<td>".$prod->GetNombre()."</td>
 					<td><img src='archivos/".$prod->GetPathFoto()."' width='100px' height='100px'/></td>
+					   <td>
+                                <form method=post name=modificarProducto action= formmodificacionBD.php>
+                                <input type=submit name=botonModificacion class=MiBotonUTN value=Modificar />
+                                <input type=hidden name=codBarra value=".$prod->GetCodBarra()." />
+								</form>
+								<form method=post name=eliminar1  action=BorrarenBD.php>
+								<input type=submit name=botonEliminar1 class=MiBotonUTN value=Eliminar />
+								<input type=hidden name=codBarra value=".$prod->GetCodBarra()." />
+								</form>
+					</td>
 				</tr>";
 	}	
 echo "</table>";		
